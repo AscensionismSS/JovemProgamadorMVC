@@ -1,4 +1,5 @@
 ﻿using JovemProgamadorMVC.Data.Repositorio.Interfaces;
+using JovemProgamadorMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JovemProgamadorMVC.Controllers
@@ -16,12 +17,25 @@ namespace JovemProgamadorMVC.Controllers
             return View(aluno);
         }
 
-
-
         public IActionResult AdicionarAluno()
         {
             
             return View();
         }
+
+        public IActionResult InserirAluno(Aluno aluno)
+        {
+            try
+            {
+                _alunoRepositorio.InserirAluno(aluno);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

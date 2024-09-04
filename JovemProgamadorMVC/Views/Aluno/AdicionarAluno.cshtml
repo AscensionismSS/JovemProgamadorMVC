@@ -1,18 +1,20 @@
-﻿<form>
-    <div class="mb-3">
+﻿@model Aluno
+
+<form asp-controller="Aluno" asp-action="InserirAluno" method="post">
+
+    <div class="mb-3 col-md-4">
         <label class="form-label">Nome</label>
-        <input type="text" class="form-control col-md-2">
-        <
+        <input type="text" asp-for="Nome" class="form-control">
     </div>
 
-    <div class="mb-3">
-        <label  class="form-label">Cpf</label>
-        <input type="text" class="form-control col-md-2">
+    <div class="mb-3  col-md-2">
+        <label  class="form-label">Matrícula</label>
+        <input type="texy" asp-for="Matricula" class="form-control">
     </div>
 
-    <div class="mb-3">
+    <div class="mb-3 col-md-2">
         <label class="form-label">Cpf</label>
-        <input type="text" class="form-control col-md-2">
+        <input type="text" asp-for="Cpf" class="form-control">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
