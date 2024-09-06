@@ -17,6 +17,16 @@
                     <td>@aluno.Matricula</td>
                     <td>@aluno.Nome</td>
                     <td>@aluno.Cpf</td>
+                    <td>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a type="submit" class="btn btn-warning" role="button" asp-controller="Aluno" asp-action="Editar" asp-route-id="@aluno.Id">Editar</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-grid gap-2 d-md-block">
+                            <a type="submit" class="btn btn-danger" role="button" asp-controller="Aluno" asp-action="ExcluirAluno" asp-route-id="@aluno.Id">Excluir</a>
+                        </div>
+                    </td>
                 </tr>
             }
         }
