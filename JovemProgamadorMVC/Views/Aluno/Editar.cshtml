@@ -1,27 +1,29 @@
 ﻿@model Aluno
+<h1 class="text-warning text-decoration-underline display-2">Editar Aluno</h1>
+<br />
 
 <form asp-controller="Aluno" asp-action="EditarAluno" method="post">
 
     <input type="hidden" asp-for="Id" />
 
     <div class="mb-3 col-md-4">
-        <label class="form-label">Nome</label>
+        <label class="form-label text-white">Nome</label>
         <input type="text" asp-for="Nome" class="form-control">
     </div>
 
     <div class="mb-3  col-md-2">
-        <label class="form-label">Matrícula</label>
-        <input type="texy" asp-for="Matricula" class="form-control">
+        <label class="form-label text-white">Cpf</label>
+        <input type="texy" asp-for="Cpf" class="form-control">
     </div>
 
     <div class="mb-3 col-md-2">
-        <label class="form-label">Cpf</label>
-        <input type="text" asp-for="Cpf" class="form-control">
+        <label class="form-label text-white">Matricula</label>
+        <input type="text" asp-for="Matricula" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary text-dark col-md-1">Submit</button>
 
-    <a class="btn btn-warning" type="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
+    <a class="btn btn-danger text-dark col-md-1" type="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
 
 
 </form>

@@ -1,12 +1,15 @@
 ﻿@model List<Aluno>
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th scope="col">Matrícula</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Cpf</th>
-            <th scope="col"></th>
+
+<h1 class="text-white text-center">Painel Aluno</h1>
+<br/>
+<table class="table table-bordered border-light  table-hover table-hover-custom table-dark">
+    <thead> 
+        <tr class="text-center">
+            <th >Nome</th>
+            <th >Cpf</th>
+            <th>Matrícula</th>
+            <th >Opções</th>
         </tr>
     </thead>
     <tbody>
@@ -14,18 +17,16 @@
         {
             foreach (Aluno aluno in Model)
             {
-                <tr class="align-text-top">
-                    <td>@aluno.Matricula</td>
-                    <td>@aluno.Nome</td>
-                    <td class="">@aluno.Cpf</td>
-                   
-                    <td>
-                        <div class="d-grid gap-1 d-md-block">
-                            <a type="submit" class="btn btn-warning" role="button" asp-controller="Aluno" asp-action="Editar" asp-route-id="@aluno.Id">Editar</a>
-                            <a type="submit" class="btn btn-danger" role="button" asp-controller="Aluno" asp-action="ExcluirAluno" asp-route-id="@aluno.Id">Excluir</a>
+                <tr class="text-center">
+                    <td class="align-middle col-md-3">@aluno.Nome</td>
+                    <td class="align-middle col-md-3">@aluno.Cpf</td>
+                    <td class="align-middle col-md-3">@aluno.Matricula</td>
+                    <td class="align-middle col-md-3">
+                        <div class="d-grid">
+                            <a class="btn btn-warning text-dark" role="button" asp-controller="Aluno" asp-action="Editar" asp-route-id="@aluno.Id">Editar</a>
+                            <a class="btn btn-danger text-dark" role="button" asp-controller="Aluno" asp-action="ExcluirAluno" asp-route-id="@aluno.Id">Excluir</a>
                         </div>
                     </td>
-                    
                 </tr>
             }
         }
@@ -33,5 +34,5 @@
 </table>
 
 <div class="text-center">
-    <a class="btn btn-primary" type="button" asp-controller="Aluno" asp-action="Index">Adicionar Aluno</a>
+    <a class="btn btn-primary col-md-2 text-dark" type="button" asp-controller="Aluno" asp-action="AdicionarAluno">Adicionar Aluno</a>
 </div>

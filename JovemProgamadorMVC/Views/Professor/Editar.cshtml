@@ -1,27 +1,29 @@
 ﻿@model Professor
+<h1 class="text-warning display-2 text-decoration-underline">Editar Professor</h1>
+<br/>
 
 <form asp-controller="Professor" asp-action="EditarProfessor" method="post">
 
     <input type="hidden" asp-for="Id" />
 
     <div class="mb-3 col-md-4">
-        <label class="form-label">Nome</label>
+        <label class="form-label text-white">Nome</label>
         <input type="text" asp-for="Nome" class="form-control">
     </div>
 
     <div class="mb-3  col-md-2">
-        <label class="form-label">Cpf</label>
+        <label class="form-label text-white">Cpf</label>
         <input type="texy" asp-for="Cpf" class="form-control">
     </div>
 
     <div class="mb-3 col-md-2">
-        <label class="form-label">Disciplina</label>
+        <label class="form-label text-white">Disciplina</label>
         <input type="text" asp-for="Disciplina" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary  col-md-1  text-dark">Submit</button>
 
-    <a class="btn btn-warning" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
+    <a class="btn btn-danger col-md-1 text-dark" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
 
 
 </form>

@@ -14,5 +14,11 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(33, 37, 41)
+}
+
+.table-hover-custom .btn-warning:hover {
+    background-color: #f9a825; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
 }

@@ -4,23 +4,23 @@
 <form asp-controller="Professor" asp-action="InserirProfessor" method="post">
 
     <div class="mb-3 col-md-4">
-        <label class="form-label">Nome</label>
+        <label class="form-label text-white">Nome</label>
         <input type="text" asp-for="Nome" class="form-control">
     </div>
 
     <div class="mb-3  col-md-2">
-        <label class="form-label">Cpf</label>
+        <label class="form-labelead text-white">Cpf</label>
         <input type="text" asp-for="Cpf" class="form-control">
     </div>
 
     <div class="mb-3 col-md-2">
-        <label class="form-label">Disciplina</label>
+        <label class="form-label text-white">Disciplina</label>
         <input type="text" asp-for="Disciplina" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary text-dark">Submit</button>
 
-    <a class="btn btn-warning" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
+    <a class="btn btn-danger text-dark" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
 
 
 </form>

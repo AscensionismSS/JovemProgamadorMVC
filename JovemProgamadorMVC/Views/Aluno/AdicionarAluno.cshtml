@@ -4,21 +4,21 @@
 <form asp-controller="Aluno" asp-action="InserirAluno" method="post">
 
     <div class="mb-3 col-md-4">
-        <label class="form-label">Nome</label>
+        <label class="form-label text-white">Nome</label>
         <input type="text" asp-for="Nome" class="form-control">
     </div>
 
     <div class="mb-3  col-md-2">
-        <label  class="form-label">Matrícula</label>
-        <input type="texy" asp-for="Matricula" class="form-control">
-    </div>
-
-    <div class="mb-3 col-md-2">
-        <label class="form-label">Cpf</label>
+        <label  class="form-labe text-white">Cpf</label>
         <input type="text" asp-for="Cpf" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3 col-md-2">
+        <label class="form-label text-white">Matrícula</label>
+        <input type="text" asp-for="Matricula" class="form-control">
+    </div>
 
-    <a class="btn btn-warning" type="button" asp-controller="Aluno" asp-action="VoltarIndexAluno">Voltar</a>
+    <button type="submit" class="btn btn-primary text-dark">Submit</button>
+
+    <a class="btn btn-danger text-dark" type="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
 </form>
