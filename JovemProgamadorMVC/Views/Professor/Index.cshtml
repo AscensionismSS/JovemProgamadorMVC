@@ -1,4 +1,11 @@
 ﻿@model List<Professor>
+
+@{
+    int totalProfessores = Model.Count;
+}
+
+
+<p class="text-white">Total de Professores: @totalProfessores</p>
 <h1 class="text-white text-center">Painel Professor</h1>
 <br />
 
@@ -24,8 +31,8 @@
 
                     <td>
                         <div class="d-grid ">
-                            <a type="submit" class="btn btn-warning text-dark" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
-                            <a type="submit" class="btn btn-danger text-dark " role="button" asp-controller="Professor" asp-action="ExcluirProfessor" asp-route-id="@professor.Id">Excluir</a>
+                            <a  class="btn btn-warning text-dark" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
+                            <a  class="btn btn-danger text-dark " role="button" asp-controller="Professor" asp-action="ExcluirProfessor" asp-route-id="@professor.Id">Excluir</a>
                         </div>
                     </td>
 

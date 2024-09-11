@@ -1,6 +1,13 @@
 ﻿@model List<Aluno>
 
 
+@{
+    int totalAlunos = Model.Count;
+}
+
+
+<p class="text-white">Total de Alunos: @totalAlunos</p>
+
 <h1 class="text-white text-center">Painel Aluno</h1>
 <br/>
 <table class="table table-bordered border-light  table-hover table-hover-custom table-dark">

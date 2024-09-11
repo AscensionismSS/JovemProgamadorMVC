@@ -1,5 +1,6 @@
 ﻿@model Aluno
-
+<h1 class="text-warning text-decoration-underline display-2">Adicionar Aluno</h1>
+<br />
 
 <form asp-controller="Aluno" asp-action="InserirAluno" method="post">
 
@@ -18,7 +19,7 @@
         <input type="text" asp-for="Matricula" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary text-dark">Submit</button>
+    <button type="submit" class="btn btn-primary text-dark">Enviar</button>
 
     <a class="btn btn-danger text-dark" type="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
 </form>
