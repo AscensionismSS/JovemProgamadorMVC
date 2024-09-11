@@ -19,7 +19,7 @@ namespace JovemProgamadorMVC.Controllers
 
         public IActionResult AdicionarAluno()
         {
-            
+
             return View();
         }
 
@@ -36,8 +36,8 @@ namespace JovemProgamadorMVC.Controllers
             }
             return RedirectToAction("Index");
         }
-        
-       public IActionResult Editar(int id)
+
+        public IActionResult Editar(int id)
         {
             var aluno = _alunoRepositorio.BuscarId(id);
             return View(aluno);
@@ -55,5 +55,6 @@ namespace JovemProgamadorMVC.Controllers
             return RedirectToAction("Index");
         }
 
+        
     }
 }

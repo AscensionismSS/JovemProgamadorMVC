@@ -15,6 +15,8 @@ builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(con
 
 builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
 
+builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

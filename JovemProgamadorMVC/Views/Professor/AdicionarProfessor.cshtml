@@ -1,0 +1,26 @@
+﻿@model Professor
+
+
+<form asp-controller="Professor" asp-action="InserirProfessor" method="post">
+
+    <div class="mb-3 col-md-4">
+        <label class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control">
+    </div>
+
+    <div class="mb-3  col-md-2">
+        <label class="form-label">Cpf</label>
+        <input type="texy" asp-for="Cpf" class="form-control">
+    </div>
+
+    <div class="mb-3 col-md-2">
+        <label class="form-label">Disciplina</label>
+        <input type="text" asp-for="Disciplina" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <a class="btn btn-warning" type="button" asp-controller="Professor" asp-action="Index">Voltar</a>
+
+
+</form>

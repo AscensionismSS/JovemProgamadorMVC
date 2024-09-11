@@ -1,5 +1,6 @@
 ﻿@model Aluno
 
+
 <form asp-controller="Aluno" asp-action="InserirAluno" method="post">
 
     <div class="mb-3 col-md-4">
@@ -18,4 +19,6 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
+
+    <a class="btn btn-warning" type="button" asp-controller="Aluno" asp-action="VoltarIndexAluno">Voltar</a>
 </form>
